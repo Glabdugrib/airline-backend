@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AirportController;
+use App\Http\Controllers\FlightController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,10 @@ Route::group([
 ], function () {
 
     Route::resource('airports', AirportController::class)->except([
-      'create', 'edit'
+        'create', 'edit'
+    ]);
+
+    Route::resource('flights', FlightController::class)->except([
+        'create', 'edit'
     ]);
 });

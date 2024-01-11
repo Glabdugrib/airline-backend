@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
@@ -29,6 +28,6 @@ class AirportSeeder extends Seeder
         })->toArray();
 
         // Insert data into the database
-        DB::table('airports')->insert($data); 
+        DB::table('airports')->insert($data);
     }
 }

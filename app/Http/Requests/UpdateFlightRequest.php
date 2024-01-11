@@ -22,12 +22,12 @@ class UpdateFlightRequest extends FormRequest
     public function rules(): array
     {
         return [
-          'departure_airport_id' => 'sometimes|exists:airports,id',
-          'arrival_airport_id' => 'sometimes|exists:airports,id',
-          'departure_at' => 'sometimes|date_format:Y-m-d H:i',
-          'arrival_at' => 'sometimes|date_format:Y-m-d H:i|after_or_equal:departure_at',
-          'price' => 'sometimes|numeric|min:0',
-          'stopovers' => 'sometimes|integer|min:0|max:2',
+            'departure_airport_id' => 'sometimes|exists:airports,id',
+            'arrival_airport_id' => 'sometimes|exists:airports,id',
+            'departure_at' => 'sometimes|date_format:Y-m-d H:i',
+            'arrival_at' => 'sometimes|date_format:Y-m-d H:i|after_or_equal:departure_at',
+            'price' => 'sometimes|numeric|min:0',
+            'stopovers' => 'sometimes|integer|min:0|max:2',
         ];
     }
 }

@@ -22,15 +22,15 @@ class IndexAirportRequest extends FormRequest
     public function rules(): array
     {
         return [
-          'city' => 'sometimes|string|max:50',
-          'country' => 'sometimes|string|max:50',
-          'sort_by' => [
-              'sometimes',
-              'string',
-              'regex:/^((\+|\-)?\w+(,)?)*$/'
-          ],
-          'page' => 'sometimes|integer|min:1',
-          'limit' => 'sometimes|integer|min:1|max:100',
+            'city' => 'sometimes|string|max:50',
+            'country' => 'sometimes|string|max:50',
+            'sort_by' => [
+                'sometimes',
+                'string',
+                'regex:/^((\+|\-)?\w+(,)?)*$/',
+            ],
+            'page' => 'sometimes|integer|min:1',
+            'limit' => 'sometimes|integer|min:1|max:100',
         ];
     }
 }

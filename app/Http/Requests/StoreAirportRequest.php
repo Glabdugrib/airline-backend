@@ -22,10 +22,10 @@ class StoreAirportRequest extends FormRequest
     public function rules(): array
     {
         return [
-          'code' => 'required|string|size:3|unique:airports,code',
-          'name' => 'required|string|max:50',
-          'city' => 'required|string|max:50',
-          'country' => 'required|string|max:50',
+            'code' => 'required|string|size:3|unique:airports,code',
+            'name' => 'required|string|max:50',
+            'city' => 'required|string|max:50',
+            'country' => 'required|string|max:50',
         ];
     }
 }

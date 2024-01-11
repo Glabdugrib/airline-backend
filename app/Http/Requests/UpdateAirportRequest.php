@@ -22,10 +22,10 @@ class UpdateAirportRequest extends FormRequest
     public function rules(): array
     {
         return [
-          'code' => 'sometimes|string|size:3|unique:airports,code,' . $this->route('airport')->id,
-          'name' => 'sometimes|string|max:50',
-          'city' => 'sometimes|string|max:50',
-          'country' => 'sometimes|string|max:50',
+            'code' => 'sometimes|string|size:3|unique:airports,code,'.$this->route('airport')->id,
+            'name' => 'sometimes|string|max:50',
+            'city' => 'sometimes|string|max:50',
+            'country' => 'sometimes|string|max:50',
         ];
     }
 }

@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Carbon;
-use App\Models\Airport;
 
 /**
  * Class Flight
@@ -22,7 +21,6 @@ use App\Models\Airport;
  * @property Carbon $created_at
  * @property Carbon $updated_at
  * @property Carbon|null $deleted_at
- *
  * @property-read Airport $departureAirport
  * @property-read Airport $arrivalAirport
  */
@@ -40,8 +38,6 @@ class Flight extends Model
 
     /**
      * Define a relationship for the departure airport of the flight.
-     *
-     * @return BelongsTo
      */
     public function departureAirport(): BelongsTo
     {
@@ -50,8 +46,6 @@ class Flight extends Model
 
     /**
      * Define a relationship for the arrival airport of the flight.
-     *
-     * @return BelongsTo
      */
     public function arrivalAirport(): BelongsTo
     {

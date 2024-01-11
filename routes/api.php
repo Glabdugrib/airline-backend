@@ -1,10 +1,9 @@
 <?php
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AirportController;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\FlightController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +20,7 @@ Route::post('login', [AuthController::class, 'login']);
 
 Route::group([
     'prefix' => 'v1',
-    'middleware'=> ['auth:sanctum'],
+    'middleware' => ['auth:sanctum'],
 ], function () {
 
     Route::apiResource('airports', AirportController::class);

@@ -2,8 +2,8 @@
 
 namespace Database\Factories;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
 use App\Models\Airport;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
 /**
@@ -19,14 +19,14 @@ class AirportFactory extends Factory
     public function definition(): array
     {
         do {
-            $uniqueCode =  strtoupper(fake()->randomLetter . fake()->randomLetter . fake()->randomLetter);
+            $uniqueCode = strtoupper(fake()->randomLetter.fake()->randomLetter.fake()->randomLetter);
         } while (Airport::where('code', $uniqueCode)->exists());
-        
+
         return [
             'code' => $uniqueCode,
             'name' => Str::limit(fake()->word, 50),
             'city' => Str::limit(fake()->city, 50),
-            'country' => Str::limit(fake()->country, 50)
+            'country' => Str::limit(fake()->country, 50),
         ];
     }
 }

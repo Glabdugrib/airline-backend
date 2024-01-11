@@ -22,12 +22,12 @@ class StoreFlightRequest extends FormRequest
     public function rules(): array
     {
         return [
-          'departure_airport_id' => 'required|exists:airports,id',
-          'arrival_airport_id' => 'required|exists:airports,id',
-          'departure_at' => 'required|date_format:Y-m-d H:i',
-          'arrival_at' => 'required|date_format:Y-m-d H:i|after_or_equal:departure_at',
-          'price' => 'required|numeric|gt:0',
-          'stopovers' => 'required|integer|min:0|max:2',
+            'departure_airport_id' => 'required|exists:airports,id',
+            'arrival_airport_id' => 'required|exists:airports,id',
+            'departure_at' => 'required|date_format:Y-m-d H:i',
+            'arrival_at' => 'required|date_format:Y-m-d H:i|after_or_equal:departure_at',
+            'price' => 'required|numeric|gt:0',
+            'stopovers' => 'required|integer|min:0|max:2',
         ];
     }
 }

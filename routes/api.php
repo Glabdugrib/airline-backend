@@ -24,11 +24,7 @@ Route::group([
     'middleware'=> ['auth:sanctum'],
 ], function () {
 
-    Route::resource('airports', AirportController::class)->except([
-        'create', 'edit'
-    ]);
+    Route::apiResource('airports', AirportController::class);
 
-    Route::resource('flights', FlightController::class)->except([
-        'create', 'edit'
-    ]);
+    Route::apiResource('flights', FlightController::class);
 });

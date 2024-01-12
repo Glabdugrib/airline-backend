@@ -10,7 +10,6 @@ This repository contains the implementation of a scalable backend API for a fict
 <br>
 
 ## Requirments
-
 - PHP 8.1
 - Composer
 - Docker
@@ -19,25 +18,41 @@ This repository contains the implementation of a scalable backend API for a fict
 
 ## Technology Stack
 
-Lorem ipsum
+#### Laravel
+Scalability advantages, robust Eloquent ORM, easy syntax and strong community support.
+
+#### Docker
+Uniform development environments to enhance scalability.
+
+#### Laravel Sail
+Reduced setup complexity.
+
+#### MySQL
+Simplicity, no need for particular features.
+
+#### Laravel Sanctum
+Lightweight authentication, development ease. I opted for the bearer token solution.
+
+#### Pest
+Simplicity, readability, and seamless Laravel integration.
 
 <br>
 
-## Scalability
-
-Lorem ipsum
-
-<br>
-
-## Testing
-
-Lorem ipsum
+## API Design
+I chose a RESTful API for its simplicity and scalability, providing a standardized and versatile solution. Its stateless nature makes it very reliable.
+I used API versioning, followed naming conventions for endpoints and employed custom request classes for validation, maintaining a clear separation of concerns. Additionally, I implemented pagination, multi-column sorting, and a wide range of filters, especially for the Flight model.
 
 <br>
 
-## Documentation
+## Possible Improvements
+Considerable improvements can be made to enhance system performance and reliability. Implementing caching mechanisms, employing load balancing strategies, and expanding the test coverage with more extensive unit/integration tests will optimize response times, resource utilization, and overall system robustness.
 
-Lorem ipsum
+<br>
+
+## Database
+<p align="center">
+  <img src="./public/ERD.png"/>
+</p>
 
 <br>
 
@@ -90,10 +105,9 @@ php artisan test
 <br>
 
 Procede to this link to try the APIs:
-~~~
-swagger link
-~~~
 <br>
+[Swagger API documentation](https://glabdugrib.github.io/airline-swagger)
+<br><br>
 
 Login in the `/login` enpoint with these credentials:
 ~~~

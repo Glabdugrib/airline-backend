@@ -39,8 +39,9 @@ Simplicity, readability, and seamless Laravel integration.
 <br>
 
 ## API Design
-I chose a RESTful API for its simplicity and scalability, providing a standardized and versatile solution. Its stateless nature makes it very reliable.
-I used API versioning, followed naming conventions for endpoints and employed custom request classes for validation, maintaining a clear separation of concerns. Additionally, I implemented pagination, multi-column sorting, and a wide range of filters, especially for the Flight model.
+<p>I chose a <strong>RESTful API</strong> for its simplicity and scalability, providing a standardized and versatile solution. Its stateless nature makes it very reliable.</p>
+<p>I used API versioning, followed naming conventions for endpoints and employed custom request classes for validation, maintaining a clear separation of concerns. Additionally, I implemented pagination, multi-column sorting, and a wide range of filters, especially for the Flight model.</p>
+<p>I documented all the API's endpoints, params and responses with <strong>Swagger</strong> (you can find the link in the setup section).</p>
 
 <br>
 

@@ -5,7 +5,8 @@
 
 <br>
 
-This repository contains the implementation of a scalable backend API for a fictional airline company. The project focuses on defining CRUD endpoints for airports and flights, supporting pagination, sorting, and filtering, and implementing a secure authentication mechanism.
+<p>This repository contains the implementation of a scalable backend API for a fictional airline company. The project focuses on defining CRUD endpoints for airports and flights, supporting pagination, sorting, and filtering, and implementing a secure authentication mechanism.</p>
+<p>Aware that I had only a few hours available to complete the project, I chose to focus only on the backend part in order to maintain a high quality code standard.</p>
 
 <br>
 
